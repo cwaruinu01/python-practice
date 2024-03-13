@@ -117,7 +117,7 @@ print(x)
 y=5
 5+=y
 """
-y = 2.0
+y = 2
 y %= 5
 print("My answer is", y)
 """
@@ -199,7 +199,7 @@ elif age <= 18:
 president_age = 12
 nationality = "USA"
 
-if president_age >= 18 and nationality == "Kenyan":
+if president_age >= 35 and nationality == "Kenyan":
     print("you are as successful candidate")
 else:
     print("you cannot be president ")
@@ -210,3 +210,53 @@ if nationality == "Kenya" or nationality == "Uganda" or nationality == "Tanzania
     print("you are qualified to play cecafa")
 else:
     print("you do not qualify to play cecafa")
+
+school = "Harvard"
+if school == "Harvard" or "Yale" or "Brown" or "Dartmouth" or "Princeton" or "UPenn" or "Cornell" or "Columbia" or "Wharton":
+    print("You are in an Ivy League University")
+else:
+    print("You are not in an Ivy League University")
+
+# how to know if a number is odd or even
+x = 15
+x *= 5
+print(x)
+
+x = 3
+if (x % 2) == 0:
+    print("x is even")
+else:
+    print("x is odd")
+
+# casting
+
+first_name = "Claudia"
+last_name = "Wanjiru"
+full_name = first_name + " " + last_name
+print(full_name)
+
+# integer to string
+name = "Mary"
+number = 60
+jersey = name + " " + str(number)
+print(jersey)
+
+# string to integer
+list = "20000"
+lit = 30670
+total = int(list) + lit
+print(total)
+print(list)
+
+bucket = 20.0
+book = "50.0"
+total = float(book) + bucket
+result = str(total) + " " + "shillings"
+print(result)
+
+# looping
+# while loop
+i=0
+while i<=100:
+    i+= 12
+    print("value is",i)
