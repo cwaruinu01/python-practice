@@ -260,3 +260,37 @@ i=0
 while i<=100:
     i+= 12
     print("value is",i)
+
+name=input("Enter your name: ")
+while name=="":
+    print("You did not enter your name")
+    name=input("Enter your name: ")
+print(f"Hello {name}")
+
+"""
+name=input("enter your name")
+nationality=input("enter your nationality ")
+kenyan =0
+other=0
+while nationality=="Kenyan" or "kenyan"or kenyan>=0:
+    print(number)
+    number+=1
+    name=input("enter your name")
+    nationality=input("enter your nationality")
+else:
+    print("welcome")
+"""
+"""
+nationality=input("nationality required")
+nationality="Kenyan"
+allowed=1
+disallowed=1
+while nationality!="Kenyan" or allowed!=1 or disallowed==1:
+    print("rejected")
+    disallowed+=1
+
+"""
+
+
+
+
