@@ -28,7 +28,7 @@ x = 2
 
 A = "Mary"
 a = "Mary"
-
+"""
 # variables must start with either a letter or an underscore
 
 # Assigning Many Values to Multiple Variables
@@ -36,10 +36,10 @@ x, y, z = "Orange", "Banana", "Cherry"
 print(x)
 print(y)
 print(z)
-
+"""
 # Unpack a Collection If you have a collection of values in a list, tuple etc. Python allows you to extract the
 # values into variables. This is called unpacking.
-
+"""
 fruits = ["apple", "banana", "cherry"]
 x, y, z = fruits
 print(x)
@@ -55,7 +55,7 @@ x = "Python"
 y = "is"
 z = "awesome"
 print(x, y, z)
-
+"""
 # Variables that are created outside a function (as in all the examples above) are known as global variables.
 
 """OPERATORS
@@ -260,13 +260,13 @@ i=0
 while i<=100:
     i+= 12
     print("value is",i)
-
+"""
 name=input("Enter your name: ")
 while name=="":
     print("You did not enter your name")
     name=input("Enter your name: ")
 print(f"Hello {name}")
-
+"""
 """
 name=input("enter your name")
 nationality=input("enter your nationality ")
@@ -291,6 +291,82 @@ while nationality!="Kenyan" or allowed!=1 or disallowed==1:
 
 """
 
+"""
+visitors=int(input("enter number of visitors"))
+kenyan_no=0
+ugandan_no=0
+total=0
+while total<=visitors:
+    nationality=input("nationality required")
+    if nationality=="Kenyan":
+        kenyan_no+=1
+        total+=1
+    else:
+        ugandan_no+=1
+        total+=1
+print("the number of visitors is",total)
+print("the number of kenyans is",kenyan_no)
+print("the number of ugandans is",ugandan_no)
+"""
+"""
+fruits={"apple,bananas,mangoes"}
+print(fruits)
 
 
+fruit=("apple","mangoes","tomatoes")
+size=("small","medium","large")
+for x in fruit:
+    for y in size:
+        for i in range(3):
+         print(x,y)
+"""
+""" 
+student_names=[input("enter student name"),input("enter second student name"),input("enter third student name")]
+while student_names!=" ":
+    print(student_names)
+    student_names+=1
+student_names = [input("enter student name"), input("enter second student name"), input("enter third student name")]
 
+"""
+"""
+def myfunction():
+    print("hello world")
+myfunction()
+"""
+"""
+item=input("enter item;")
+while item=="":
+    if item!="":
+     print(item)
+     item=input("enter item;")
+    item+=1
+else:
+ print("done")
+ """
+"""
+fruits ("apple,","banana")
+print(fruits)
+fruits==list(fruits)
+fruits[1].append("mango")
+fruits
+"""
+#functions
+#creating a function
+def addition(x,y):
+    return x+y
+#calling a function
+print(addition(4,4))
+
+#function 2
+def printhellofive():
+    for x in range(5):
+        print("Hello")
+print(printhellofive())
+
+import calc_modules
+a=200
+b=300
+print(calc_modules.add(a,b))
+x=780
+y=450
+print(calc_modules.multiply(x, y))
